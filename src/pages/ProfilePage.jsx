@@ -9,10 +9,25 @@ import learn from "../assets/learnIcon.png"
 import Swap from "../assets/SwapIcon.png"
 import ExpertiseCard from "../components/expertiseCard";
 import SkillWantedCard from "../components/WantedCard";
-
+import starIcon from "../assets/starIcon.png";
+import emptyStar from "../assets/emptyStar.png";
 
 
 const ProfilePage = () => {
+
+  const renderStars =  (rating) => {
+    let star = [];
+    for(let i=0;i<5;i++){
+      if(i<rating){
+        star.push(<img key={i} src={starIcon} alt="Star" />)
+      }
+      else{
+        star.push(<img key={i} src={emptyStar} alt="" />);
+      }
+    }
+    return star ;
+  }
+
   return (
     <div className="profilePage bg-gray-100 overflow-hidden">
       <Navbar />
@@ -35,6 +50,7 @@ const ProfilePage = () => {
         <div className="info w-full mt-16 flex justify-between px-10">
           <div className="aboutSect w-[60%]  px-10">
             <h1 className="name text-3xl  font-semibold ">Yash Bisht <span className="gender text-xl font-normal ml-3 mb-2">(He/Him)</span></h1>
+            <div className="rating flex gap-1 mt-2 w-full"> {renderStars(4)} </div>
             <p className="About text-[17px] text-gray-700 font-semibold  mt-3 scrollbar-hide overflow-scroll  ">
               Passionate about web design | Learning photograph Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum delectus consectetur voluptate Lorem ipsum dolor sit amet
             </p>
