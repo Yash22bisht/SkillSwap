@@ -4,7 +4,7 @@ import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import ProfilePage from './pages/ProfilePage';
 import PostedSkill from './pages/PostedSkill';
-
+import BrowseSkills from './pages/BrowseSkills';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <Route path='/login' element={<LoginPage/>} />
       <Route path='/profile' element={<ProfilePage/>} />
       <Route path='/postedSkill' element={<PostedSkill/>} />
+      <Route path='/browseSkills' element={<BrowseSkills/>} />
     </Routes>
     </>
   )

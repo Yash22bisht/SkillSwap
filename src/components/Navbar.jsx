@@ -5,20 +5,20 @@ import ChatIcon from "../assets/ChatIcon.png";
 const Navbar = () => {
   return (
     <div>
-      <nav className='w-screen h-24 bg-teal-600 flex items-center px-8 justify-between '>
+      <nav className='w-screen h-24 bg-[#00857a] flex items-center px-8 justify-between '>
 
         <div className="logo flex">
           <a href="/"><img src="src\assets\swapLogo.png" alt="" className='bg-white rounded-full w-16 p-2' /></a>
         </div>
         <div className="navMenu flex text-white text-xl font-semibold gap-6 ">
           <a href="/" className=' ease-in hover:underline-offset-4 hover:text-shadow-md hover:underline'><h3>Home</h3></a>
-          <a href="/" className=' ease-in hover:underline-offset-4 hover:text-shadow-md hover:underline'><h3>Browse Skills</h3></a>
-          <a href="/" className=' ease-in hover:underline-offset-4 hover:text-shadow-md hover:underline'><h3>How It Works </h3></a>
+          <a href="/browseSkills" className=' ease-in hover:underline-offset-4 hover:text-shadow-md hover:underline'><h3>Browse Skills</h3></a>
+          <a href="#HowItWork" className=' ease-in hover:underline-offset-4 hover:text-shadow-md hover:underline'><h3>How It Works </h3></a>
           <a href="/" className=' ease-in hover:underline-offset-4 hover:text-shadow-md hover:underline'><h3>About Us </h3></a>
           <a href="/" className=' ease-in hover:underline-offset-4 hover:text-shadow-md hover:underline'><h3>Contact</h3></a>
         </div>
 
-        <div className="myAccount flex items-center gap-8 mr-5 hidden">
+        <div className="myAccount hidden items-center gap-8 mr-5 ">
           <div className="notification relative bottom-2">
             <div className="number relative top-4 left-5 bg-red-600 px-0 py-1 m-0 text-center rounded-[50%] font-bold  text-white text-sm">4</div>
             <img src={notificationIcon} alt="" className="w-8 h-8 cursor-pointer" />

@@ -86,7 +86,7 @@ const reviews = [
 
 const ReviewSection = () => {
   return (
-    <div className="ReviewSection w-full px-10 py-14 bg-[#E0F7F5] ">
+    <div id="reviewSection" className="ReviewSection w-screen px-10 py-14 bg-[#E0F7F5] ">
       <div className="reviews flex items-center">
         <h1 className="heading font-Luckiest text-5xl text-teal-600 mb-10 ">
           Recent Reviews :

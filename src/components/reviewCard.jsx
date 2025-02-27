@@ -17,7 +17,7 @@ const ReviewCard = (props) => {
     return star ;
   }
   return (
-    <div className="review w-[20vw] h-[28vh] bg-amber-50 p-3 space-y-2 whitespace-normal flex-shrink-0 rounded-3xl">
+    <div className="review w-[20vw] h-[full] bg-gradient-to-b from-amber-100 to-transparent p-3 space-y-2 whitespace-normal flex-shrink-0 rounded-3xl">
       <div className="UserDetails flex items-center gap-2">
         <img src={ProfileIcon} className="profileIcon w-10 h-10" alt="" />
         <div className="NameTime ">

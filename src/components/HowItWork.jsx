@@ -9,11 +9,11 @@ import step6 from "../assets/step6.jpeg";
 
 function HowItWork() {
   return (
-    <div className=" HowItWork  w-full py-14  px-0 mx-0 bg-[#E0F7F5]  ">
-      <h1 className="font-Luckiest  text-6xl text-[#FF914D] font-bold tracking-wide text-center mb-8 ">
+    <div id="HowItWork" className=" HowItWork  w-full py-14  px-0 mx-0 bg-[#E0F7F5]  ">
+      <h1 className="font-Luckiest  text-6xl text-[#da6f00] font-extrabold tracking-wide text-center mb-8 ">
         Join Now For Free{" "}
       </h1>
-      <div className="container w-full mx-auto flex justify-center flex-wrap">
+      <div className="container w-full mx-auto flex space-x-14 justify-center flex-wrap">
         {/* Step1 */}
         <Card src = {step1} title = {"Create a Profile"} desc = {"Showcase your skills and let others know what you offer."} />
         {/* step2 */}
